@@ -1,0 +1,21 @@
+{
+  "lib": {
+    "name": "bower-rails generated lib assets",
+    "dependencies": {
+    }
+  },
+  "vendor": {
+    "name": "bower-rails generated vendor assets",
+    "dependencies": {
+      "angular": "1.2.4",
+      "angular-resource": "1.2.4",
+      "angular-cookies": "1.2.4",
+      "angular-sanitize": "1.2.4",
+      "angular-route": "1.2.4",
+      "underscore": "1.6.0",
+      "spin.js": "2.0.1",
+      "angular-spinner": "0.5.1",
+      "restangular": "1.4.0"
+    }
+  }
+}

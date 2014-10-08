@@ -1,0 +1,25 @@
+angular
+  .module('railsShowcaseApp', [
+    'ngCookies',
+    'ngRoute',
+    'ngSanitize',
+    'restangular',
+    'angularSpinner'
+  ])
+  .config(function ($routeProvider) {
+    $routeProvider
+      .when('/login', {
+        templateUrl: '<%= asset_path('login.html') %>',
+        controller: 'LoginController'
+      })
+      .when('/home', {
+        templateUrl: '<%= asset_path('home.html') %>',
+        controller: 'HomeController'
+      })
+      .otherwise({
+        redirectTo: '/login'
+      });
+  })
+  .config(function ($httpProvider) {
+    $httpProvider.interceptors.push('httpActivityIndicatorInterceptor');
+  });

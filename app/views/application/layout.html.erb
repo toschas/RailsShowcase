@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RailsShowcase</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= csrf_meta_tags %>
+</head>
+<body ng-app="railsShowcaseApp">
+
+<span class="spinner" us-spinner="{color: '#bbb', lines: 50, length: 0, top: '25px'}" spinner-key="spinner-0"></span>
+
+<div ng-view=""></div>
+
+<%= javascript_include_tag 'application' %>
+
+</body>
+</html>
